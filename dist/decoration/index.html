@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Décoration Personnalisée - Aalliyah Cake's Creation</title>
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="/decoration/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <a href="/" class="back-button"><i class="fas fa-arrow-left"></i> Retour</a>
+        <h1>Décoration Personnalisée</h1>
+        
+        <div class="decoration-container">
+            <div class="canvas-container">
+                <canvas id="decorationCanvas"></canvas>
+            </div>
+            
+            <div class="controls">
+                <div class="control-section">
+                    <h3>Décorations</h3>
+                    <div class="decoration-grid" id="decorationGrid"></div>
+                </div>
+                
+                <div class="control-section">
+                    <h3>Personnalisation</h3>
+                    <div class="control-group">
+                        <label>Forme de l'étage:</label>
+                        <select id="layerShape">
+                            <option value="round">Rond</option>
+                            <option value="square">Carré</option>
+                            <option value="heart">Coeur</option>
+                            <option value="character">Caractère</option>
+                        </select>
+                    </div>
+                    
+                    <div class="control-group" id="characterInput" style="display: none;">
+                        <label>Caractère:</label>
+                        <input type="text" maxlength="1" id="selectedCharacter">
+                    </div>
+                    
+                    <div class="control-group">
+                        <label>Image personnalisée:</label>
+                        <input type="file" id="customDecoration" accept="image/*">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/decoration/script.js"></script>
+</body>
+</html>

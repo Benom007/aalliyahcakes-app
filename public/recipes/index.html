@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcul des Coûts et Poids - Aalliyah Cake's Creation</title>
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="/recipes/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <a href="/" class="back-button"><i class="fas fa-arrow-left"></i> Retour</a>
+        <h1>Calculateur de Coûts et Poids</h1>
+        
+        <div class="calculator-container">
+            <div class="ingredients-form">
+                <h2>Ingrédients de la Recette</h2>
+                <div id="ingredients-list">
+                    <!-- Ingredient rows will be added here -->
+                </div>
+                <button onclick="addIngredient()" class="add-button">
+                    <i class="fas fa-plus"></i> Ajouter un ingrédient
+                </button>
+            </div>
+            
+            <div class="results">
+                <h2>Résultats</h2>
+                <div class="result-box">
+                    <div class="result-item">
+                        <label>Poids Total:</label>
+                        <span id="totalWeight">0 g</span>
+                    </div>
+                    <div class="result-item">
+                        <label>Coût Total:</label>
+                        <span id="totalCost">0.00 €</span>
+                    </div>
+                    <div class="result-item">
+                        <label>Coût par 100g:</label>
+                        <span id="costPer100g">0.00 €</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/recipes/script.js"></script>
+</body>
+</html>

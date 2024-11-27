@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcul des Parts et Ingrédients - Aalliyah Cake's Creation</title>
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="/calculator/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <a href="/" class="back-button"><i class="fas fa-arrow-left"></i> Retour</a>
+        <h1>Calcul des Parts et Ingrédients</h1>
+        
+        <div class="calculator-section">
+            <div class="form-group">
+                <label>Type de Gâteau:</label>
+                <select id="cakeType">
+                    <option value="round">Rond</option>
+                    <option value="square">Carré</option>
+                    <option value="rectangle">Rectangle</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Taille (cm):</label>
+                <input type="number" id="cakeSize" min="10" value="20">
+            </div>
+
+            <div class="form-group">
+                <label>Nombre d'étages:</label>
+                <input type="number" id="layers" min="1" value="1">
+            </div>
+
+            <button onclick="calculateServings()" class="calculate-button">
+                Calculer
+            </button>
+
+            <div id="results" class="results">
+                <h3>Résultats:</h3>
+                <p>Nombre de parts: <span id="servings">-</span></p>
+                <div id="ingredients"></div>
+            </div>
+        </div>
+    </div>
+    <script src="/calculator/script.js"></script>
+</body>
+</html>

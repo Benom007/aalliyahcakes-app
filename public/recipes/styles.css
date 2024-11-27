@@ -1,0 +1,104 @@
+.calculator-container {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.ingredients-form {
+    margin-bottom: 2rem;
+}
+
+.ingredient-row {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr auto;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    align-items: center;
+}
+
+.ingredient-row input {
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.ingredient-row select {
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.delete-button {
+    background: #ff4444;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem;
+    cursor: pointer;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.add-button {
+    background: linear-gradient(135deg, #ff69b4, #9370db);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 0.75rem 1.5rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.results {
+    background: #f9f9f9;
+    padding: 1.5rem;
+    border-radius: 5px;
+}
+
+.result-box {
+    display: grid;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.result-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.result-item label {
+    font-weight: bold;
+    color: #333;
+}
+
+.result-item span {
+    font-size: 1.1rem;
+    color: #ff69b4;
+}
+
+.back-button {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.back-button:hover {
+    text-decoration: underline;
+}
